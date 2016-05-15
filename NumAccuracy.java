@@ -30,8 +30,10 @@ public class NumAccuracy {
         	return  b1.multiply(b2).doubleValue();
     	}
 
-
-
-
-
+	public  static  double  div(double firstNum, double secondNum, int scale){  
+		BigDecimal b1 = BigDecimal.valueOf(firstNum);  
+	    	BigDecimal b2 = BigDecimal.valueOf(secondNum); 
+	    	System.out.println("the answer is ;  " + b1.divide(b2, scale, BigDecimal.ROUND_HALF_UP).doubleValue());
+        	return  b1.divide(b2, scale, BigDecimal.ROUND_HALF_UP).doubleValue();
+	}
 }
