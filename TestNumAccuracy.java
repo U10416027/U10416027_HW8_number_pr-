@@ -32,7 +32,24 @@ public class TestNumAccuracy {
 			judge = input.nextInt();
 		}
 	
-	
+		NumAccuracy accuracy = new NumAccuracy(firstNum, secondNum);
+		
+		if(judge == 1){
+			accuracy.add(firstNum, secondNum);
+		}
+		
+		else if(judge == 2){
+			accuracy.sub(firstNum, secondNum);
+		}
+		
+		
+		else if(judge == 3){
+			accuracy.mul(firstNum, secondNum);
+		}
+		
+		else{
+			accuracy.div(firstNum, secondNum, divScale);
+		}
 	
 	}
 }
